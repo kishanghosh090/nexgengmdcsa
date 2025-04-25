@@ -1,40 +1,55 @@
 "use client";
 
 import { BackgroundGradient } from "../components/ui/background-gradient";
-
 import { SparklesText } from "@/components/magicui/sparkles-text";
+import { ShimmerButton } from "@/components/magicui/shimmer-button";
+import chess_tournament from "../assets/Chess_Tournament.jpg";
+import code_connect from "../assets/CODE-COONECT.png";
+import quiz from "../assets/QUIZ TIME.jpg";
 
 export default function CurrentEvents() {
-  let currentEvents = [1, 2, 3];
+  let currentEvents = [
+    {
+      title:
+        "Chess Tournament Test your wits in the ultimate chess face-off! Every move makes a master. ♟️",
+      src: chess_tournament,
+    },
+    {
+      title:
+        "Code Connect Code. Create. Conquer. Join the Hackathon! Where ideas turn into innovation. 💡💻",
+      src: code_connect,
+    },
+    {
+      title:
+        "Quiz Tournament Quiz Time! 🤓 Common Sense with Knowledge Think fast, answer faster!",
+      src: quiz,
+    },
+  ];
   return (
-    <div className="flex justify-center flex-col items-center gap-10 space-y-4 mt-20">
+    <div className="flex justify-center flex-col items-center gap-10 space-y-4 mt-20 p-4">
       <h1>
-        <SparklesText className="text-2xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">Current Events</SparklesText>
+        <SparklesText className="text-4xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
+          Current Events
+        </SparklesText>
       </h1>
       <div className="flex justify-center items-center gap-20 space-y-4 mt-20 flex-wrap">
-        {currentEvents.map(() => (
-          <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-zinc-900 hover:transform hover:scale-105 transition-all">
+        {currentEvents.map((event) => (
+          <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-zinc-900 hover:transform hover:scale-105 hover:shadow-2xl  transition-all">
             <img
-              src={`/jordans.webp`}
-              alt="jordans"
-              height="400"
-              width="400"
-              className="object-contain"
+              src={event.src}
+              alt=""
+              height="200"
+              width="200"
+              className="object-contain text-center"
             />
-            <p className="text-base sm:text-xl  mt-4 mb-2 text-neutral-200">
-              Air Jordan 4 Retro Reimagined
-            </p>
 
-            <p className="text-sm text-neutral-400">
-              The Air Jordan 4 Retro Reimagined Bred will release on Saturday,
-              February 17, 2024. Your best opportunity to get these right now is
-              by entering raffles and waiting for the official releases.
-            </p>
-            <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-              <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
-                $100
+            <p className="text-sm text-neutral-400 m-2">{event.title}</p>
+
+            <ShimmerButton className="shadow-2xl mt-2">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Register Now
               </span>
-            </button>
+            </ShimmerButton>
           </BackgroundGradient>
         ))}
       </div>

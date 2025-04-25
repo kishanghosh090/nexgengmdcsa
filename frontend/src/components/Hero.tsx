@@ -9,7 +9,7 @@ function Hero() {
     "
     >
       <div className="absolute inset-0 w-full h-full bg-neutral-950 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none " />
-      <Boxes />
+      {/* <Boxes /> */}
       <Meteors number={30} />
       <TextAnimate
         animation="blurInUp"
@@ -17,7 +17,7 @@ function Hero() {
         duration={0.3}
         delay={0.5}
         once={false}
-        className="text-2xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans mt-20 "
+        className="text-3xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans mt-20 "
       >
         Let's Code ,
       </TextAnimate>
@@ -28,7 +28,7 @@ function Hero() {
         duration={0.3}
         delay={0.5}
         once={false}
-        className="text-2xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans  "
+        className="text-3xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans  "
       >
         Create & Celebrate Together
       </TextAnimate>
