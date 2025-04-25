@@ -1,4 +1,4 @@
-import { Boxes } from "../components/ui/background-boxes";
+// import { Boxes } from "../components/ui/background-boxes";
 import { Meteors } from "../components/magicui/meteors";
 import ColourfulText from "@/components/ui/colourful-text";
 import { TextAnimate } from "../components/magicui/text-animate";
