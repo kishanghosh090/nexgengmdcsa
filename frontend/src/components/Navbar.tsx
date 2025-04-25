@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="fixed top-0 left-0 w-full py-4 md:py-6 backdrop-blur-md bg-neutral-950 dark:bg-white z-50 text-white">
+      <header className="fixed top-0 left-0 w-full py-4 md:py-6 backdrop-blur-md bg-neutral-950/2 dark:bg-white z-50 text-white">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="flex-shrink-0">
@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="flex lg:hidden">
               <button
                 type="button"
-                className="text-gray-900"
+                className="text-white"
                 onClick={handleToggle}
                 aria-expanded={expanded}
               >
@@ -67,7 +67,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 title=""
-                className="text-base font-medium  transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 text-white"
+                className="text-base font-medium  transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1  focus:ring-offset-2 text-white"
               >
                 {" "}
                 Home{" "}
@@ -116,40 +116,31 @@ const Navbar = () => {
           <nav className={`dropdown-menu ${expanded ? "block" : "hidden"}`}>
             <div className="px-1 py-8">
               <div className="grid gap-y-7">
-                <a
-                  href="#"
+                <NavLink
+                  to="/events"
                   title=""
-                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-400 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  About Us{" "}
-                </a>
-
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-400 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  className="text-base font-medium  transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 text-white"
                 >
                   {" "}
-                  Contact{" "}
-                </a>
+                  Event{" "}
+                </NavLink>
 
-                <a
-                  href="#"
+                <NavLink
+                  to="/gallery"
                   title=""
-                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-400 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 "
                 >
                   {" "}
-                  Projects{" "}
-                </a>
-
-                <a
-                  href="#"
+                  Gallery{" "}
+                </NavLink>
+                <NavLink
+                  to="/contact"
                   title=""
-                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-400 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
                 >
                   {" "}
-                  FAQ{" "}
-                </a>
+                  About{" "}
+                </NavLink>
               </div>
             </div>
           </nav>
