@@ -5,7 +5,7 @@ import App from "./App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div className="w-screen h-screen bg-gray-900">
+    <div className="text-white  overflow-hidden">
       <App />
     </div>
   </StrictMode>
