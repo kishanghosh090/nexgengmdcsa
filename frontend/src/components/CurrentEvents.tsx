@@ -1,5 +1,6 @@
 "use client";
-
+import React from "react";
+import EventRegisterForm from "./EventRegisterForm";
 import { BackgroundGradient } from "../components/ui/background-gradient";
 import { SparklesText } from "@/components/magicui/sparkles-text";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
@@ -25,8 +26,15 @@ export default function CurrentEvents() {
       src: quiz,
     },
   ];
+
+  const [RegisterForm, setRegisterForm] = React.useState(false);
+
+  const openResgisterForm = () => {
+    setRegisterForm(!RegisterForm);
+  };
   return (
     <div className="flex justify-center flex-col items-center gap-10 space-y-4 mt-20 p-4">
+      {RegisterForm && <EventRegisterForm setRegisterForm={setRegisterForm} />}
       <h1>
         <SparklesText className="text-4xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
           Current Events
@@ -45,7 +53,10 @@ export default function CurrentEvents() {
 
             <p className="text-sm text-neutral-400 m-2">{event.title}</p>
 
-            <ShimmerButton className="shadow-2xl mt-2">
+            <ShimmerButton
+              onClick={openResgisterForm}
+              className="shadow-2xl mt-2"
+            >
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                 Register Now
               </span>

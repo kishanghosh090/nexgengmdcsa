@@ -1,15 +1,16 @@
-// import { Boxes } from "../components/ui/background-boxes";
 import { Meteors } from "../components/magicui/meteors";
 import ColourfulText from "@/components/ui/colourful-text";
 import { TextAnimate } from "../components/magicui/text-animate";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+
 function Hero() {
   return (
-    <div
+    <BackgroundBeamsWithCollision
       className="h-screen relative w-full overflow-hidden bg-neutral-950 gap-7 flex flex-col items-center justify-center p-10
     "
     >
       <div className="absolute inset-0 w-full h-full bg-neutral-950 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none " />
-      {/* <Boxes /> */}
+
       <Meteors number={30} />
       <TextAnimate
         animation="blurInUp"
@@ -21,7 +22,7 @@ function Hero() {
       >
         Let's Code ,
       </TextAnimate>
-      
+
       <TextAnimate
         animation="slideLeft"
         by="character"
@@ -35,7 +36,7 @@ function Hero() {
       <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
         <ColourfulText text="NEXGEN" />
       </h1>
-    </div>
+    </BackgroundBeamsWithCollision>
   );
 }
 

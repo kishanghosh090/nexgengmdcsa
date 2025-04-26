@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="flex-shrink-0">
-              <h4 className="text-2xl font-bold text-white dark:text-gray-100">
+              <h4 className="text-2xl font-bold text-white dark:text-gray-100 cursor-grab">
                 NEXGEN
               </h4>
             </div>
@@ -91,7 +91,7 @@ const Navbar = () => {
                 Gallery{" "}
               </NavLink>
               <NavLink
-                to="/contact"
+                to="/about"
                 title=""
                 className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
