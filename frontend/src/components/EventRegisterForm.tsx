@@ -12,9 +12,10 @@ export function ShineBorderDemo({ setRegisterForm }: any) {
       className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4  w-full h-screen backdrop-blur-md bg-neutral-950/2 z-50"
     >
       <motion.div
-        initial={{ opacity: 0, y: -50 }}
+        initial={{ opacity: 0, y: -60 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        exit={{ opacity: 0, y: -60 }}
+        transition={{ duration: 0.1 }}
         className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 z-50 bg-[#171717]  text-white p-6 rounded-2xl w-11/12 md:w-1/2"
       >
         <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
