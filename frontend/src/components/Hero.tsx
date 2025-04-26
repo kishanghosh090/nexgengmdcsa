@@ -6,7 +6,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 function Hero() {
   return (
     <BackgroundBeamsWithCollision
-      className="h-screen relative w-full overflow-hidden bg-neutral-950 gap-7 flex flex-col items-center justify-center p-10
+      className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-neutral-950 gap-7 flex flex-col items-center justify-center p-10
     "
     >
       <div className="absolute inset-0 w-full h-full bg-neutral-950 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none " />
