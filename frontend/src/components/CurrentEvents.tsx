@@ -33,7 +33,7 @@ export default function CurrentEvents() {
     setRegisterForm(!RegisterForm);
   };
   return (
-    <div className="flex justify-center flex-col items-center gap-10 space-y-4 mt-20 p-4">
+    <div className="flex justify-center flex-col items-center gap-10 space-y-4 mt-20 p-4 border-b border-zinc-800 pb-10">
       {RegisterForm && <EventRegisterForm setRegisterForm={setRegisterForm} />}
       <h1>
         <SparklesText className="text-4xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
@@ -43,14 +43,15 @@ export default function CurrentEvents() {
       <div className="flex justify-center items-center gap-20 space-y-4 mt-20 flex-wrap">
         {currentEvents.map((event) => (
           <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-zinc-900 hover:transform hover:scale-105 hover:shadow-2xl  transition-all">
-            <img
-              src={event.src}
-              alt=""
-              height="200"
-              width="200"
-              className="object-contain text-center"
-            />
-
+            <div className="w-full flex justify-center">
+              <img
+                src={event.src}
+                alt=""
+                height="200"
+                width="250"
+                className="object-contain text-center rounded-2xl"
+              />
+            </div>
             <p className="text-sm text-neutral-400 m-2">{event.title}</p>
 
             <ShimmerButton
