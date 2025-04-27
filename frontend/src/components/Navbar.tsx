@@ -9,12 +9,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="fixed top-0 left-0 w-full py-4 md:py-6 backdrop-blur-md bg-neutral-950/2  z-50 text-white">
+      <header className="fixed top-0 left-0 w-full py-4 md:py-6 backdrop-blur-lg bg-neutral-950/2  z-50 text-white border-b border-white/10">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="flex-shrink-0">
-              <h4 className="text-2xl font-bold text-white dark:text-gray-100 cursor-grab">
-                NEXGEN
+              <h4 className="text-2xl font-bold text-white dark:text-gray-100 cursor-grab ">
+                NEXGEN _
               </h4>
             </div>
 

@@ -1,12 +1,11 @@
-
+import CurrentEvents from "@/components/CurrentEvents";
 import Navbar from "@/components/Navbar";
-
 
 function Events() {
   return (
-    <div className="bg-neutral-950 ">
+    <div className=" h-full md:h-screen relative w-full overflow-hidden bg-neutral-950 ">
       <Navbar />
-    
+      <CurrentEvents />
     </div>
   );
 }
