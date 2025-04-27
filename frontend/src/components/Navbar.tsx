@@ -13,9 +13,12 @@ const Navbar = () => {
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="flex-shrink-0">
-              <h4 className="text-2xl font-bold text-white dark:text-gray-100 cursor-grab ">
+              <NavLink
+                to={"/"}
+                className="text-2xl font-bold text-white dark:text-gray-100 cursor-grab "
+              >
                 NEXGEN _
-              </h4>
+              </NavLink>
             </div>
 
             <div className="flex lg:hidden">
