@@ -3,13 +3,25 @@ import { TextAnimate } from "../components/magicui/text-animate";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 import { BackgroundLines } from "@/components/ui/background-lines";
-
+import { Confetti, type ConfettiRef } from "@/components/magicui/confetti";
+import { useRef } from "react";
 function Hero() {
+  const confettiRef = useRef<ConfettiRef>(null);
   return (
     <BackgroundBeamsWithCollision
       className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-neutral-950 gap-7 flex flex-col items-center justify-center p-5
-        "
+    "
     >
+      <Confetti
+        ref={confettiRef}
+        className="absolute left-0 top-0 z-40 size-full"
+        onLoad={() => {
+          confettiRef.current?.fire({});
+        }}
+        onMouseOver={() => {
+          confettiRef.current?.fire({});
+        }}
+      />
       <BackgroundLines className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-neutral-950 flex gap-10 md:gap-12 flex-col md:items-center md:justify-center items-center justify-center">
         <div className="absolute inset-0 w-full h-full bg-neutral-950 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none " />
 

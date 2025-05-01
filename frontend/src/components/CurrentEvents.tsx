@@ -1,4 +1,5 @@
-"use client";
+import { CardSpotlight } from "@/components/ui/card-spotlight";
+("use client");
 import React from "react";
 import EventRegisterForm from "./EventRegisterForm";
 import { BackgroundGradient } from "../components/ui/background-gradient";
@@ -28,14 +29,13 @@ export default function CurrentEvents() {
   ];
 
   const [RegisterForm, setRegisterForm] = React.useState(false);
-
   const openResgisterForm = () => {
     setRegisterForm(!RegisterForm);
   };
   return (
-    <div className="flex justify-center flex-col items-center gap-10 space-y-4 mt-20 p-4 border-b border-zinc-800 pb-10">
+    <CardSpotlight className="flex justify-center flex-col items-center gap-10 space-y-4 pt-10 p-4 border-b border-zinc-800 pb-10">
       {RegisterForm && <EventRegisterForm setRegisterForm={setRegisterForm} />}
-      <h1>
+      <h1 className="mt-10">
         <SparklesText className="text-4xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
           Current Events
         </SparklesText>
@@ -65,6 +65,6 @@ export default function CurrentEvents() {
           </BackgroundGradient>
         ))}
       </div>
-    </div>
+    </CardSpotlight>
   );
 }
