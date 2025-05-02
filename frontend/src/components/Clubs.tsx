@@ -28,7 +28,7 @@ function Clubs() {
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans mt-10 ">
         Our Clubs
       </h1>
-      <div className="flex flex-wrap gap-6 mt-4">
+      <div className="flex flex-wrap justify-center items-center gap-6 mt-4 p-6">
         {Clubs.map((club, index) => {
           return (
             <CardContainer className="inter-var rounded-xl py-6 cursor-pointer ">
@@ -68,8 +68,8 @@ function Clubs() {
           );
         })}
       </div>
-      <div className="flex flex-wrap gap-6 mt-4">
-        <CardContainer className="inter-var rounded-xl py-6 cursor-pointer ">
+      <div className="flex flex-wrap gap-6 mt-4 p-4">
+        <CardContainer className="inter-var rounded-xl py-6 cursor-pointer w-[100vw]">
           <ShineBorder shineColor={"white"} />
           <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex flex-col justify-center items-start gap-3 ">
             <CardItem className="text-2xl md:text-3xl text-center  flex justify-center">

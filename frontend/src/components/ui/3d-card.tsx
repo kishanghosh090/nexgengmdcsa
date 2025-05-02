@@ -62,7 +62,7 @@ export const CardContainer = ({
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           className={cn(
-            "flex items-center justify-center relative transition-all duration-200 ease-linear",
+            "flex items-center w-[100vw] md:w-auto mx-10 md:mx-0 justify-center relative transition-all duration-200 ease-linear",
             className
           )}
           style={{

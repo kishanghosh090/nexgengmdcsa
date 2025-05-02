@@ -29,7 +29,7 @@ import TeamMembers from "./TeamMembers";
 
 export default function DetailsNexGen() {
   return (
-    <div className="">
+    <div className="p-4">
       <div className="h-screen flex flex-col items-center justify-center">
         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
           <p className="text-[3.5rem] md:text-8xl font-semibold ">

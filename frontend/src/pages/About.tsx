@@ -12,7 +12,7 @@ function About() {
     });
   }, [pathname]);
   return (
-    <div className=" h-full  relative w-full overflow-hidden bg-neutral-950 p-4">
+    <div className=" h-full  relative w-full overflow-hidden bg-neutral-950 ">
       <Navbar />
       <DetailsNexGen />
       <Clubs />
