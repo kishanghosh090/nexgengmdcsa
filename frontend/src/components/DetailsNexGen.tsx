@@ -1,0 +1,25 @@
+import React from "react";
+import {
+  TextRevealCard,
+  TextRevealCardDescription,
+  TextRevealCardTitle,
+} from "./ui/text-reveal-card";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
+
+const DetailsNexGen = () => {
+  return (
+    <div className="w-full h-screen flex flex-col items-center justify-center">
+      <TextRevealCard
+        text="What is NexGen ?"
+        revealText="What is NexGen ?"
+        className=" flex flex-col items-center justify-center"
+      ></TextRevealCard>
+      <TextGenerateEffect
+        className=" text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white relative z-2 font-sans w-[80%] md:w-1/2"
+        words="The NexGen, the Premier Celebration of Creativity and Innovation in Computer Science and Application !! Join us for an exhilarating showcase of talent, where competitions in singing, dancing, drawing, coding, and more come together in a celebration of both technology and the arts. Whether you're a tech enthusiast, an aspiring artist, or a music lover, NexGen offers something for everyone.Connect with us to witness the remarkable skills of our participants, enjoy highlights from the event, and be inspired by the powerful fusion of technology and creativity.'Let's code, create, and celebrate together!'"
+      />
+    </div>
+  );
+};
+
+export default DetailsNexGen;
