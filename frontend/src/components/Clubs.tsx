@@ -32,7 +32,10 @@ function Clubs() {
         {Clubs.map((club, index) => {
           return (
             <CardContainer className="inter-var rounded-xl py-6 cursor-pointer ">
-              <ShineBorder shineColor={"white"} duration={(index + 100) * 0.1} />
+              <ShineBorder
+                shineColor={"white"}
+                duration={(index + 100) * 0.1}
+              />
               <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex flex-col justify-center items-start gap-3 ">
                 <CardItem className="text-2xl md:text-3xl text-center  flex justify-center">
                   <h1 className="font-bold text-2xl md:text-3xl text-center mb-10">
@@ -64,6 +67,74 @@ function Clubs() {
             </CardContainer>
           );
         })}
+      </div>
+      <div className="flex flex-wrap gap-6 mt-4">
+        <CardContainer className="inter-var rounded-xl py-6 cursor-pointer ">
+          <ShineBorder shineColor={"white"} />
+          <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex flex-col justify-center items-start gap-3 ">
+            <CardItem className="text-2xl md:text-3xl text-center  flex justify-center">
+              <h1 className="font-bold text-2xl md:text-3xl text-center mb-10">
+                Founders & Governing body
+              </h1>
+            </CardItem>
+            <CardItem
+              translateZ="50"
+              className="text-xl  text-neutral-300 flex gap-2"
+            >
+              <h1 className="font-bold">Ex. Presindent: </h1>
+              <span>Suvradip Sinha</span>
+            </CardItem>
+            <CardItem
+              translateZ="50"
+              className="text-xl  text-neutral-300 flex gap-2"
+            >
+              <h1 className="font-bold">Ex. Vice-Presindent: </h1>
+              <span>Provangshu Saha</span>
+            </CardItem>
+            <CardItem
+              translateZ="50"
+              className="text-xl  text-neutral-300 flex gap-2"
+            >
+              <h1 className="font-bold">Ex. Secretary: </h1>
+              <span> Subhradeep Ray</span>
+            </CardItem>
+            <CardItem
+              translateZ="50"
+              className="text-xl  text-neutral-300 flex gap-2"
+            >
+              <h1 className="font-bold">Ex. Event Coordinator: </h1>
+              <span> Samiran Roy</span>
+            </CardItem>
+            <CardItem
+              translateZ="50"
+              className="text-xl  text-neutral-300 flex gap-2"
+            >
+              <h1 className="font-bold">Member of GB: </h1>
+              <span> Aditi Ghosh</span>
+            </CardItem>
+            <CardItem
+              translateZ="50"
+              className="text-xl  text-neutral-300 flex gap-2"
+            >
+              <h1 className="font-bold">Member of GB: </h1>
+              <span> Supriya Karmakar</span>
+            </CardItem>
+            <CardItem
+              translateZ="50"
+              className="text-xl  text-neutral-300 flex gap-2"
+            >
+              <h1 className="font-bold">Member of GB: </h1>
+              <span> Bibek Das</span>
+            </CardItem>
+            <CardItem
+              translateZ="50"
+              className="text-xl  text-neutral-300 flex gap-2"
+            >
+              <h1 className="font-bold">Member of GB: </h1>
+              <span> Indranil Sarkar</span>
+            </CardItem>
+          </CardBody>
+        </CardContainer>
       </div>
     </div>
   );
