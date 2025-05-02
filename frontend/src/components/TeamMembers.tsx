@@ -5,19 +5,19 @@ export default function TeamMembers() {
     {
       quote: "President",
       name: "Sanjay Mandal",
-      designation: "Sanjay Mandal",
+      designation: "9647801363",
       src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       quote: "Secretary",
       name: "Indrajit Mandal",
-      designation: "Indrajit Mandal",
+      designation: "9907302997",
       src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       quote: "Event Coordinator",
       name: "Hiranmay Das",
-      designation: "Hiranmay Das",
+      designation: "9593870459",
       src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
