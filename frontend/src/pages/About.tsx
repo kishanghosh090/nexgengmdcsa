@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 
 function About() {
   return (
-    <div className=" h-full  relative w-full overflow-hidden bg-neutral-950 ">
+    <div className=" h-full  relative w-full overflow-hidden bg-neutral-950 p-4">
       <Navbar />
-      <DetailsNexGen /> /
+      <DetailsNexGen /> 
     </div>
   );
 }

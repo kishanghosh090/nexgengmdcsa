@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { BorderBeam } from "../components/magicui/border-beam";
 const Navbar = () => {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -137,7 +138,7 @@ const Navbar = () => {
                   Gallery{" "}
                 </NavLink>
                 <NavLink
-                  to="/contact"
+                  to="/about"
                   title=""
                   className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
                 >
@@ -148,6 +149,17 @@ const Navbar = () => {
             </div>
           </nav>
         </div>
+        <BorderBeam
+          duration={6}
+          size={400}
+          className="from-transparent via-red-500 to-transparent"
+        />
+        <BorderBeam
+          duration={6}
+          delay={3}
+          size={400}
+          className="from-transparent via-blue-500 to-transparent"
+        />
       </header>
     </div>
   );
