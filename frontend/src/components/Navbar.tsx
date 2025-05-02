@@ -149,7 +149,7 @@ const Navbar = () => {
             </div>
           </nav>
         </div>
-        <BorderBeam
+        {/* <BorderBeam
           duration={6}
           size={400}
           className="from-transparent via-red-500 to-transparent"
@@ -159,6 +159,13 @@ const Navbar = () => {
           delay={3}
           size={400}
           className="from-transparent via-blue-500 to-transparent"
+        /> */}
+        {/* <BorderBeam duration={8} size={100} /> */}
+        <BorderBeam
+          duration={4}
+          size={300}
+          reverse
+          className="from-transparent via-green-500 to-transparent"
         />
       </header>
     </div>
