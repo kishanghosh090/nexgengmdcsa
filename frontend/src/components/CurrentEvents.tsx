@@ -35,12 +35,12 @@ export default function CurrentEvents() {
   return (
     <CardSpotlight className="flex justify-center flex-col items-center gap-10 space-y-4 pt-10 p-4 border-b border-zinc-800 pb-10">
       {RegisterForm && <EventRegisterForm setRegisterForm={setRegisterForm} />}
-      <h1 className="mt-10">
+      <h1 className="mt-30">
         <SparklesText className="text-4xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
           Current Events
         </SparklesText>
       </h1>
-      <div className="flex justify-center items-center gap-20 space-y-4 mt-20 flex-wrap">
+      <div className="flex justify-center items-center gap-20 space-y-4 pt-20 flex-wrap">
         {currentEvents.map((event) => (
           <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-zinc-900 hover:transform hover:scale-105 hover:shadow-2xl  transition-all">
             <div className="w-full flex justify-center">
