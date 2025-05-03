@@ -3,11 +3,11 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { SparklesCore } from "./ui/sparkles"; // React sparkles effect
 import  ColourfulText  from "@/components/ui/colourful-text";
-import { CardSpotlight } from "./ui/card-spotlight";
+
 
 function Hero() {
   return (
-    <CardSpotlight className="flex flex-col items-center justify-start min-h-screen w-full  overflow-hidden pt-8">
+    <div className="flex flex-col items-center justify-start min-h-screen w-full  overflow-hidden pt-8">
     
     <BackgroundBeamsWithCollision
       className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-transparent gap-7 flex flex-col items-center justify-center p-5"
@@ -21,7 +21,7 @@ function Hero() {
           duration={0.3}
           delay={0.5}
           once={false}
-          className="text-5xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans mt-20 "
+          className="text-3xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans mt-20 "
         >
           Let's Code ,
         </TextAnimate>
@@ -32,7 +32,7 @@ function Hero() {
           duration={0.3}
           delay={0.5}
           once={false}
-          className="text-4xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans  "
+          className="text-[1.4rem] md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans  "
         >
           Create & Celebrate
         </TextAnimate>
@@ -77,7 +77,7 @@ function Hero() {
       </div>
       </BackgroundLines>
     </BackgroundBeamsWithCollision>
-    </CardSpotlight>
+    </div>
   );
 }
 

@@ -75,7 +75,7 @@ export default function CurrentEvents() {
             variants={cardVariants}
             className="flex-shrink-0"
           >
-            <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-zinc-900 hover:transform hover:scale-105 hover:shadow-2xl transition-all">
+            <BackgroundGradient className="rounded-[22px] max-w-[300px] p-4 sm:p-10 bg-zinc-900 hover:transform hover:scale-105 hover:shadow-2xl transition-all">
               <div className="w-full flex justify-center">
                 <img
                   src={event.src}

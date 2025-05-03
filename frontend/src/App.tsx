@@ -10,7 +10,7 @@ import About from "./pages/About";
 
 function App() {
   return (
-    <CardSpotlight>
+    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
-    </CardSpotlight>
+    
   );
 }
 

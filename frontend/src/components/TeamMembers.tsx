@@ -27,7 +27,7 @@ export default function TeamMembers() {
         <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
           Team Lead
         </h1>
-        <AnimatedTestimonials testimonials={testimonials} />
+        <AnimatedTestimonials testimonials={testimonials}  />
       </div>
     </>
   );
