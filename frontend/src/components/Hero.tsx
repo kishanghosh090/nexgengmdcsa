@@ -49,7 +49,7 @@ function Hero() {
       <h1 className="text-white font-extrabold text-[6vw] md:text-[7vw] leading-none text-center w-[90vw] max-w-[1200px] ml-4">
         <ColourfulText
           text="NEXTGEN"
-          className="text-5xl md:text-6xl lg:text-8xl"
+
         />
       </h1>
 
