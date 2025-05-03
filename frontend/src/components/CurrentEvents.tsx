@@ -1,5 +1,5 @@
-import { CardSpotlight } from "@/components/ui/card-spotlight";
 ("use client");
+import { CardSpotlight } from "@/components/ui/card-spotlight";
 import React from "react";
 import EventRegisterForm from "./EventRegisterForm";
 import { BackgroundGradient } from "../components/ui/background-gradient";
