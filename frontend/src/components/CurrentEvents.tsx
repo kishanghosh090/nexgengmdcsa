@@ -3,7 +3,7 @@
 
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import React from "react";
-import { CardSpotlight } from "@/components/ui/card-spotlight";
+
 import EventRegisterForm from "./EventRegisterForm";
 import { BackgroundGradient } from "../components/ui/background-gradient";
 import { SparklesText } from "@/components/magicui/sparkles-text";
