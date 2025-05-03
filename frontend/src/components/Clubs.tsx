@@ -69,7 +69,7 @@ function Clubs() {
         })}
       </div>
       <div className="flex flex-wrap gap-6 mt-4 p-4">
-        <CardContainer className="inter-var rounded-xl py-6 cursor-pointer w-[100vw]">
+        <CardContainer className="inter-var rounded-xl py-6 cursor-pointer w-[94vw]">
           <ShineBorder shineColor={"white"} />
           <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex flex-col justify-center items-start gap-3 ">
             <CardItem className="text-2xl md:text-3xl text-center  flex justify-center">
