@@ -15,7 +15,7 @@ export default function Home() {
         }, [pathname]);
   return (
     <>
-      <div className="bg-neutral-950">
+      <div className="bg-neutral-950 ">
         <Navbar />
         <Hero />
         <CurrentEvents />
