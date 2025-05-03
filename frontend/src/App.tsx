@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { CardSpotlight } from "@/components/ui/card-spotlight";
+
 // Pages
 import Home from "./pages/Home";
 import Events from "./pages/Events";
