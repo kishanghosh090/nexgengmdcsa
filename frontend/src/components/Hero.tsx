@@ -3,15 +3,17 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { SparklesCore } from "./ui/sparkles"; // React sparkles effect
 import  ColourfulText  from "@/components/ui/colourful-text";
+import { CardSpotlight } from "./ui/card-spotlight";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen w-full bg-black overflow-hidden pt-8">
+    <CardSpotlight className="flex flex-col items-center justify-start min-h-screen w-full  overflow-hidden pt-8">
+    
     <BackgroundBeamsWithCollision
-      className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-neutral-950 gap-7 flex flex-col items-center justify-center p-5"
+      className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-transparent gap-7 flex flex-col items-center justify-center p-5"
     >
-      <BackgroundLines className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-neutral-950 flex gap-10 md:gap-12 flex-col md:items-center md:justify-center items-center justify-center">
-        <div className="absolute inset-0 w-full h-full bg-neutral-950 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none " />
+      <BackgroundLines className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-transparent flex gap-10 md:gap-12 flex-col md:items-center md:justify-center items-center justify-center">
+        <div className="absolute inset-0 w-full h-full bg-transparent z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none " />
         
         <TextAnimate
           animation="blurInUp"
@@ -60,20 +62,21 @@ function Hero() {
       </div>
 
       {/* Sparkles below the gradient */}
-      <div className="relative w-[90vw] max-w-[1200px] h-40 -mt-10 ml-4">
+      <div className="relative w-[30vw] max-w-[1200px] h-10 -mt-10 ml-4">
         <SparklesCore
           minSize={1}
           maxSize={2}
-          particleDensity={400}
+          particleDensity={800}
           className="w-full h-full"
           particleColor="#FFFFFF"
+          background="transparent"
         />
         {/* Radial mask to fade sparkles at the edges */}
-        <div className="absolute inset-0 h-full w-full bg-[#0A0A0A] pointer-events-none [mask-image:radial-gradient(350px_100px_at_top,transparent_20%,white)]"></div>
+        <div className="absolute inset-0 h-full w-full bg-transparent pointer-events-none [mask-image:radial-gradient(350px_100px_at_top,transparent_20%,white)]"></div>
       </div>
       </BackgroundLines>
     </BackgroundBeamsWithCollision>
-    </div>
+    </CardSpotlight>
   );
 }
 
