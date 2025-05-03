@@ -108,7 +108,7 @@ const Navbar = () => {
               <a
                 href="#"
                 title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                className="text-base font-medium text-gray-200 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
                 {" "}
                 FAQ{" "}
@@ -165,7 +165,7 @@ const Navbar = () => {
           duration={4}
           size={300}
           reverse
-          className="from-transparent via-green-500 to-transparent"
+          className="from-transparent via-blue-500 to-transparent"
         />
       </header>
     </div>

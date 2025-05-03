@@ -4,8 +4,10 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import { SparklesCore } from "./ui/sparkles"; // React sparkles effect
 import ColourfulText from "@/components/ui/colourful-text";
 
+
 function Hero() {
   return (
+
     <div className="flex flex-col items-center justify-start min-h-screen w-full bg-black overflow-hidden pt-8">
       <BackgroundBeamsWithCollision className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-neutral-950 gap-7 flex flex-col items-center justify-center p-5">
         <BackgroundLines className="h-[90vh] md:h-screen relative w-full overflow-hidden bg-neutral-950 flex gap-10 md:gap-12 flex-col md:items-center md:justify-center items-center justify-center">
@@ -43,6 +45,7 @@ function Hero() {
             Together
           </TextAnimate>
 
+
           {/* Large Heading */}
           <h1 className="text-white font-extrabold text-[6vw] md:text-[7vw] leading-none text-center w-[90vw] max-w-[1200px] ml-4">
             <ColourfulText text="NEXTGEN" />
@@ -53,6 +56,7 @@ function Hero() {
             <div className="absolute left-0 right-0 top-1/2 h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-transparent blur-[2px]" />
             <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
           </div>
+
 
           {/* Sparkles below the gradient */}
           <div className="relative w-[90vw] max-w-[1200px] h-40 -mt-10 ml-4">
@@ -68,6 +72,7 @@ function Hero() {
           </div>
         </BackgroundLines>
       </BackgroundBeamsWithCollision>
+
     </div>
   );
 }
