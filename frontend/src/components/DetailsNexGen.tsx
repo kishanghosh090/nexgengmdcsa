@@ -49,7 +49,7 @@ export default function DetailsNexGen() {
           animation="fadeIn"
           by="line"
           as="p"
-          delay={0.5}
+          delay={0.3}
           className="text-2xl md:text-4xl md:w-1/2 gap-3.5"
         >
           {
