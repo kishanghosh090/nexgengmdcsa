@@ -1,4 +1,7 @@
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import sanjay from "../assets/Sanjay.png";
+import indrajit from "../assets/INDRAJIT SECRETARY.png";
+import hiranmay from "../assets/HIRANMAY DAS.png";
 
 export default function TeamMembers() {
   const testimonials = [
@@ -6,19 +9,19 @@ export default function TeamMembers() {
       quote: "President",
       name: "Sanjay Mandal",
       designation: "9647801363",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: `${sanjay}`,
     },
     {
       quote: "Secretary",
       name: "Indrajit Mandal",
       designation: "9907302997",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: `${indrajit}`,
     },
     {
       quote: "Event Coordinator",
       name: "Hiranmay Das",
       designation: "9593870459",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: `${hiranmay}`,
     },
   ];
   return (
@@ -27,7 +30,7 @@ export default function TeamMembers() {
         <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
           Team Lead
         </h1>
-        <AnimatedTestimonials testimonials={testimonials}  />
+        <AnimatedTestimonials testimonials={testimonials} />
       </div>
     </>
   );

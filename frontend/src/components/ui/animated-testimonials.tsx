@@ -85,7 +85,7 @@ export const AnimatedTestimonials = ({
                     width={400}
                     height={400}
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
+                    className="h-full w-full rounded-3xl object-cover object-center bg-amber-300"
                     onScroll={handlePrev}
                     onClick={handlePrev}
                   />
