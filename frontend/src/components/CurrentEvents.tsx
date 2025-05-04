@@ -1,7 +1,5 @@
 
 "use client";
-
-import { CardSpotlight } from "@/components/ui/card-spotlight";
 import React from "react";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import EventRegisterForm from "./EventRegisterForm";
