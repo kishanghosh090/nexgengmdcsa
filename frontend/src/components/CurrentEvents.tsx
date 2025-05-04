@@ -1,4 +1,3 @@
-
 "use client";
 import React from "react";
 
@@ -10,6 +9,7 @@ import chess_tournament from "../assets/Chess_Tournament.jpg";
 import code_connect from "../assets/CODE-COONECT.png";
 import quiz from "../assets/QUIZ TIME.jpg";
 import { motion } from "framer-motion";
+import { CardSpotlight } from "./ui/card-spotlight";
 
 // Animation variants
 const containerVariants = {
