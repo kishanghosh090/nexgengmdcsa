@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import UpcomingEvents from "@/components/UpcomingEvents";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Footer from "@/components/Footer";
 function Events() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -18,6 +19,7 @@ function Events() {
 
       <CurrentEvents />
       <UpcomingEvents />
+      <Footer/>
     </div>
   );
 }

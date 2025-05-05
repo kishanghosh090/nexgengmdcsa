@@ -2,6 +2,7 @@ import CurrentEvents from "@/components/CurrentEvents";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import TeamMembers from "@/components/TeamMembers";
+import Footer from "@/components/Footer";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <CurrentEvents />
         <TeamMembers />
+        <Footer />
       </div>
     </>
   );
