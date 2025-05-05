@@ -1,7 +1,7 @@
 
 "use client";
 import React from "react";
-
+import { CardSpotlight } from "./ui/card-spotlight";
 import EventRegisterForm from "./EventRegisterForm";
 import { BackgroundGradient } from "../components/ui/background-gradient";
 import { SparklesText } from "@/components/magicui/sparkles-text";
