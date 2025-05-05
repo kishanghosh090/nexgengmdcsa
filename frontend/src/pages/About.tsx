@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Clubs from "@/components/Clubs";
+import Footer from "@/components/Footer";
 function About() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -16,6 +17,7 @@ function About() {
       <Navbar />
       <DetailsNexGen />
       <Clubs />
+      <Footer/>
     </div>
   );
 }
