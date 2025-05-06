@@ -33,7 +33,7 @@ const photos: PhotoItem[] = [
 
 const Gallery: React.FC = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<PhotoItem | null>(null);
-  const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  
 
   const years = Array.from(new Set(photos.map(photo => photo.year))).sort((a, b) => b - a);
 
